@@ -11,5 +11,14 @@
 
     <artifactId>normal_exercise</artifactId>
 
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.google.collect/com.springsource.com.google.common.collect -->
+        <dependency>
+            <groupId>com.google.collect</groupId>
+            <artifactId>com.springsource.com.google.common.collect</artifactId>
+            <version>0.8.0.20080820</version>
+        </dependency>
 
+
+    </dependencies>
 </project>
