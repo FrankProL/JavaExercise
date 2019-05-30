@@ -28,8 +28,7 @@ public class Demo {
              * 返回负数表示：o1 小于o2， 
              * 返回0 表示：o1和o2相等， 
              * 返回正数表示：o1大于o2。 
-             */  
-			@Override
+             */
 			public int compare(String o1, String o2) {
 				return o2.compareTo(o1);	//指定排序器按照降序排列
 			}
