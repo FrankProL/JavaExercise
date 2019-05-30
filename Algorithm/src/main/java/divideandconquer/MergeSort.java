@@ -1,4 +1,4 @@
-package conquer;
+package divideandconquer;
 
 /**
  * Created by Frank on 2018/7/11.

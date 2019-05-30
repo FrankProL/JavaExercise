@@ -1,4 +1,4 @@
-package conquer;
+package divideandconquer;
 
 /**
  * 二分搜索算法
