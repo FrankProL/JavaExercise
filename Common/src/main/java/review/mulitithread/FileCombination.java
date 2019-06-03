@@ -1,4 +1,4 @@
-﻿package review.mulitithread;
+package review.mulitithread;
 
 /**
  * 合并文件：合并由拆分文件拆分的文件

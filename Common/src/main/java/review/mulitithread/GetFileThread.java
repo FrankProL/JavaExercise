@@ -1,4 +1,4 @@
-﻿package review.mulitithread;
+package review.mulitithread;
 
 /**
   * 下载线程

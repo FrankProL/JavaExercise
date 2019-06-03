@@ -1,4 +1,4 @@
-﻿package review.mulitithread;
+package review.mulitithread;
 
 /**
  * 监视线程，检测其它的线程是否已经运行完毕 原理：

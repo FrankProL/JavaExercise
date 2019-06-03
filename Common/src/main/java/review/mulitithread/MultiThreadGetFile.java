@@ -1,4 +1,4 @@
-﻿package review.mulitithread;
+package review.mulitithread;
 
 /**
  * 多线程下载调度程序
