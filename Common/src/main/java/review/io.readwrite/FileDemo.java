@@ -12,16 +12,16 @@ public class FileDemo {
 		//也可以通过系统属性得到
 		System.out.println(System.getProperty("file.separator"));
 		
-		File file=new File("config.xml");
+		File file=new File("Common/src/main/resources/config.xml");
 		if(file.isFile()){
 			System.out.println(file+"是一个文件");
 		}
 		
 		showFileInformation(file);
 		
-		createNewFile("newfile.txt");
+		createNewFile("data/newfile.txt");
 		
-		deleteFile("newfile.txt");
+		deleteFile("data/newfile.txt");
 	}
 
 	private static void showFileInformation(File file) {

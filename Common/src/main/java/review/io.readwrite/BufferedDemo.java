@@ -14,9 +14,9 @@ import java.io.IOException;
 public class BufferedDemo {
 	public static void main(String[] args) throws IOException {
 		String dir=System.getProperty("user.dir");	//获取当前工作空间环境变量
-		File file=new File(dir+"/src/demo/test/DataStreamDemo.java");
+		File file=new File(dir+"/Common/src/main/java/review/io.readwrite/DataStreamDemo.java");
 		BufferedReader reader =new BufferedReader(new FileReader(file));
-		BufferedWriter writer =new BufferedWriter(new FileWriter("out.txt"));
+		BufferedWriter writer =new BufferedWriter(new FileWriter("data/out.txt"));
 		
 		String line;
 		while((line=reader.readLine())!=null){

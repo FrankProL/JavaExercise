@@ -16,7 +16,7 @@ public class PropertiesFile {
 		Properties prop =new Properties();
 		
 		//加载文件
-		File input= new File ("config.properties");
+		File input= new File ("E:\\IdeaProjects\\JavaExercise\\Common\\src\\main/resources/config.properties");
 		prop.load(new FileInputStream(input));
 		//prop.load(new FileReader(input));
 		
@@ -27,7 +27,7 @@ public class PropertiesFile {
 		prop.setProperty("key", "value");
 		
 		//输出到新配置文件
-		File output=new File("new.properties");
+		File output=new File("data/new");
 		prop.store(new FileOutputStream(output), "属性列表的描述");
 		//prop.store(new FileWriter(output), "属性列表的描述");
 	}
