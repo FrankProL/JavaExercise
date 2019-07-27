@@ -16,6 +16,7 @@ public class Trie {
 
     private static class Node {
         public boolean isWord;
+        public int num=0;
         public Map<Character, Node> next;
 
         public Node() {
@@ -57,9 +58,16 @@ public class Trie {
             current = current.next.get(c);
         }
         //如果当前的node已经是一个word，则不需要添加
-        if (!current.isWord) {
+        /*if (!current.isWord) {
             size++;
             current.isWord = true;
+        }*/
+        if (current.isWord) {
+            current.num += 1;
+        } else {
+            size++;
+            current.isWord=true;
+            current.num++;
         }
     }
 
@@ -82,6 +90,19 @@ public class Trie {
         }
         //如果只存在 panda这个词，查询 pan，虽然有这3个字母，但是并不存在该单词
         return current.isWord;
+    }
+
+    public int wordCount(String word) {
+        Node current = root;
+        for (int i = 0; i < word.length(); i++) {
+            char c = word.charAt(i);
+            Node node = current.next.get(c);
+            if (node == null) {
+                return 0;
+            }
+            current = node;
+        }
+        return current.num;
     }
 
 
@@ -170,6 +191,9 @@ public class Trie {
 
         System.out.println(trie.contains("he"));
         System.out.println(trie.contains("hell"));
+
+        System.out.println(trie.wordCount("he"));
+        System.out.println(trie.wordCount("hel"));
 
     }
 }
