@@ -14,6 +14,7 @@ public class Trie {
 
     private int size;
 
+    //静态内部类，也可以使用普通的外部类
     private static class Node {
         public boolean isWord;
         public int num=0;
